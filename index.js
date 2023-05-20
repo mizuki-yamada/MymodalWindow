@@ -17,7 +17,6 @@
         mask.classList.add('hidden');
         open.classList.remove('hidden');
     });
-
 }
 
 
