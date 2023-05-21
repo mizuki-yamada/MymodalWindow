@@ -5,7 +5,7 @@ body {
 #open,
 #close {
   cursor: pointer;
-  width: 25%;
+  width: 200px;
   border: 1px solid #ccc;
   border-radius: 4px;
   text-align: center;
@@ -14,8 +14,10 @@ body {
 }
 
 #mask {
+  background-color: rgba(0, 0, 0, 0.4);
+  /* 要素の位置を固定↓*/
   position: fixed;
-  color: rgba(0, 0, 0, 0.4);
+  /* マスクを画面いっぱいにしたいので、上下左右の基準値を0に設定 */
   top: 0;
   bottom: 0;
   right: 0;
@@ -25,24 +27,28 @@ body {
 
 #modal {
   background: #fff;
-  width: 100%;
+  width: 300px;
   padding: 20px;
   border-radius: 4px;
   position: absolute;
+  top: 40px;
+  /* position:absoluteのとき、left:0,right:0,margin:0 autoにすると中央揃えを実装できる（順番はこの通りで） */
+  left: 0;
+  right: 0;
   margin: 0 auto;
-  transition: transform 0.3s;
+  transition: transform 0.4s;
   z-index: 2;
 }
 
 #modal > p {
-  margin: 0 auto;
-  width: 50%;
+  margin: 0 0 20px;
 }
 
-.hidden {
+#mask.hidden {
   display: none;
 }
 
-.hidden {
-  transform: translate(0, -300px);
+/* 上から下ろしたいのはmodalのみなので、#maskと#modalのhiddenは分けてスタイリングする */
+#modal.hidden {
+  transform: translate(0, -500px);
 }

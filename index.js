@@ -9,13 +9,17 @@
     open.addEventListener('click', () => {
         modal.classList.remove('hidden');
         mask.classList.remove('hidden');
-        open.classList.add('hidden');
     });
 
     close.addEventListener('click', () => {
         modal.classList.add('hidden');
         mask.classList.add('hidden');
-        open.classList.remove('hidden');
+    });
+
+    //maskをクリックしたときもモーダル非表示にしたいので
+    mask.addEventListener('click', () => {
+        modal.classList.add('hidden');
+        mask.classList.add('hidden');
     });
 }
 

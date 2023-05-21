@@ -8,3 +8,9 @@
 - 自力で同じものを作成してみる
 - ソースコードを丸写しするときちんと動くんだよなあ
     - 何が違うのか明日確認
+    - #maskのスタイリングがcolorになっていた（background-colorにしないといけないのに）
+    - position:absoluteのとき、left:0,right:0,margin:0 autoにすると中央揃えを実装できる（順番はこの通りで）
+    - mask領域をクリックしたときもモーダルが非表示になる設定を書き忘れていた
+    - [transform][def]
+
+[def]: https://developer.mozilla.org/ja/docs/Web/CSS/transform
