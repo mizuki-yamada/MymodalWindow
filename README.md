@@ -12,6 +12,6 @@
     - position:absoluteのとき、left:0,right:0,margin:0 autoにすると中央揃えを実装できる（順番はこの通りで）
     - mask領域をクリックしたときもモーダルが非表示になる設定を書き忘れていた
     - [transform][def]
-    - commitの練習用
+    - ~~commitの練習用~~
 
 [def]: https://developer.mozilla.org/ja/docs/Web/CSS/transform
