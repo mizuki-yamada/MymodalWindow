@@ -14,3 +14,6 @@
     - [transform][def]
 
 [def]: https://developer.mozilla.org/ja/docs/Web/CSS/transform
+
+## 3回目
+- 各講義のデモだけ見て、手を動かしてみる・・・！
