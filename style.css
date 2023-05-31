@@ -11,4 +11,29 @@ body{
   text-align: center;
   width: 200px;
   padding: 12px 0;
+  cursor: pointer;
+}
+
+#background{
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  position: fixed;
+  /* ↓開始の点を決める */
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.modal{
+  width: 300px;
+  background-color: white;
+  border-radius: 4px;
+  padding: 20px;
+  z-index: 2;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
