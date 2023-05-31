@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+body{
+  font-size: 14px;
+}
+
+#open, #close{
+  margin: 16px auto 0;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  text-align: center;
+  width: 200px;
+  padding: 12px 0;
+}
